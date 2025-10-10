@@ -1,0 +1,41 @@
+configuration {
+	modes: "window,drun,run,ssh";
+	font: "mono 12";
+  location: 0;
+	show-icons: true;
+/*	preview-cmd: ;*/
+/*	on-selection-changed: ;*/
+/*	on-mode-changed: ;*/
+/*	on-entry-accepted: ;*/
+/*	on-menu-canceled: ;*/
+/*	terminal: "rofi-sensible-terminal";*/
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+	run-command: "{cmd}";
+	run-list-command: "";
+/*	run-shell-command: "{terminal} -e {cmd}";*/
+/*	window-command: "wmctrl -i -R {window}";*/
+/*	window-match-fields: "all";*/
+	icon-theme: "Papirus";
+/*	sidebar-mode: false;*/
+/*	combi-modes: "window,run";*/
+/*	completer-mode: "filebrowser";*/
+/*	display-window: ;*/
+/*	display-run: ;*/
+/*	display-ssh: ;*/
+/*	display-drun: ;*/
+/*	display-combi: ;*/
+/*	display-keys: ;*/
+/*	display-filebrowser: ;*/
+/*	display-recursivebrowser: ;*/
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "sidebar.rasi"
