@@ -1,0 +1,11 @@
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#
+# Source .zshrc easily
+alias zsrc="source $HOME/.config/zsh/.zshrc"
+alias ls="eza -a --icons -T -L 1"
+alias cl="clear"
+
+

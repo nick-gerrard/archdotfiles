@@ -1,0 +1,76 @@
+{
+    // Set the layer so Waybar is on top of the wallpaper but below windows
+    "layer": "top",
+    "position": "top", // top, bottom, left, right
+    "height": 35,
+
+    // Define the order of modules for each section of the bar
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "backlight", "cpu", "memory", "temperature","network", "tray", "custom/lock"],
+
+    // --- Module Configurations ---
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "default": ""
+        }
+    },
+
+    "clock": {
+        "format": "{:%a %d  --- %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "backlight": {
+        "device": "amdgpu_bl1", // Use the device name you found earlier
+        "format": " {percent}%"
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true
+    },
+
+    "memory": {
+        "format": " {}%"
+    },
+
+    "temperature": {
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input", // Find your path and uncomment if needed
+        "critical-threshold": 80,
+        "format": " {temperatureC}°C"
+    },
+
+    "network": {
+        "format-wifi": " {essid}", // Wi-Fi icon and network name
+        "format-ethernet": "󰈀 Wired", // Ethernet icon
+        "format-disconnected": "󰖪 Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} \nIP: {ipaddr}\nDown: {bandwidthDownBits}, Up: {bandwidthUpBits}"
+  },
+
+    "custom/lock": {
+        "format": "",
+        "on-click": "hyprlock" // Make sure you have swaylock or hyprlock installed
+    }
+}

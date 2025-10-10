@@ -1,0 +1,41 @@
+/* --- Global Styles --- */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Fira Code, FontAwesome, sans-serif; /* Use the font you installed */
+    font-size: 14px;
+    min-height: 0;
+}
+
+/* --- The Bar Itself --- */
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.85); /* Dark background with some transparency */
+    color: #cdd6f4; /* Light text color */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- Module Styles --- */
+#workspaces,
+#clock,
+#tray,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#temperature,
+#custom-lock {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+/* --- Style for the active workspace button --- */
+#workspaces button.active {
+    background-color: #89b4fa; /* A highlight color for the active workspace */
+    color: #1e1e2e; /* Dark text for the active workspace */
+}
+
+#workspaces button:hover {
+    background-color: #b4befe;
+    color: #1e1e2e;
+}

@@ -1,0 +1,53 @@
+# ~/.config/dunst/dunstrc
+
+[global]
+    # Position and size of notifications
+    # geometry = "WIDTHxHEIGHT<+/->X<+/->Y"
+    geometry = "350x6-40+50"
+
+    # Font settings
+    font = Fira Code 10
+
+    # Format of the notification content
+    # %a = app name, %s = summary, %b = body, %I = icon
+    format = "<b>%s</b>\n%b"
+
+    # Sorting and stacking options
+    sort = yes
+    indicate_hidden = yes
+    alignment = left
+    bounce_freq = 0
+    
+    # --- Appearance ---
+    corner_radius = 10
+    separator_height = 2
+    separator_color = frame
+    frame_width = 2
+    
+    # --- Timeouts ---
+    # How long to display notifications for (in seconds)
+    # idle_threshold is for when the user is idle
+    sticky_history = yes
+    history_length = 20
+    idle_threshold = 120
+
+[urgency_low]
+    # Used for things like music track changes
+    background = "#282a36"  # Dark background
+    foreground = "#f8f8f2"  # Light text
+    frame_color = "#44475a" # Muted border
+    timeout = 5
+
+[urgency_normal]
+    # The standard for most notifications
+    background = "#282a36"
+    foreground = "#f8f8f2"
+    frame_color = "#89b4fa" # A nice blue accent for the border
+    timeout = 10
+
+[urgency_critical]
+    # For important things like low battery
+    background = "#411c21"  # A dark red background
+    foreground = "#f8f8f2"
+    frame_color = "#ff5555" # Bright red border
+    timeout = 0             # Stays until dismissed
