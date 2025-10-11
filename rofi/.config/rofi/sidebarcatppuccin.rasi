@@ -1,0 +1,138 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    /* Catppuccin Mocha Palette */
+    base: #1e1e2e;
+    mantle: #181825;
+    crust: #11111b;
+    text: #cdd6f4;
+    subtext0: #a6adc8;
+    overlay0: #6c7086;
+    rosewater: #f5e0dc;
+    flamingo: #f2cdcd;
+    pink: #f5c2e7;
+    mauve: #cba6f7;
+    red: #f38ba8;
+    maroon: #eba0ac;
+    peach: #fab387;
+    yellow: #f9e2af;
+    green: #a6e3a1;
+    teal: #94e2d5;
+    sky: #89dceb;
+    sapphire: #74c7ec;
+    blue: #89b4fa;
+    lavender: #b4befe;
+
+    /* Base theme colors */
+    text-color: @text;
+/* */ background-color: rgba(0,0,0,0);
+}
+
+window {
+    height:   100%;
+    width: 30em;
+    location: west;
+    anchor:   west;
+/* */ border:  0px 2px 0px 0px;
+    border-color: @crust;
+    text-color: @text;
+}
+
+mode-switcher {
+    border: 0px 0px 2px 0px;
+    border-color: @crust;
+    background-color: @mantle;
+/* */ padding: 8px;
+}
+
+button selected {
+    border-color: @mauve;
+    text-color: @mauve;
+}
+
+inputbar {
+    background-color: @mantle;
+/* */ text-color: @text;
+    padding: 8px;
+    border: 0px 0px 2px 0px;
+    border-color: @crust;
+}
+
+mainbox {
+    expand: true;
+    background-color: rgba(30, 30, 46, 0.9); /* base with transparency */
+    spacing: 1em;
+    orientation: vertical;
+    children: [ mode-switcher, inputbar, listview ];
+/* */ }
+
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+/* */ }
+
+element {
+    padding: 8px;
+    orientation: horizontal; /* Lays out icon and text side-by-side */
+    children: [ element-icon, element-text ]; /* Defines the order */
+}
+
+/* --- New block to style the icons --- */
+element-icon {
+    size: 24px; /* Sets a fixed size for the icon */
+    margin: 0px 10px 0px 0px; /* Adds spacing between the icon and text */
+    background-color: inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align: 0.5; /* Aligns text to the middle of the icon */
+/* */ }
+
+element selected normal {
+    background-color: @overlay0;
+    text-color: @text;
+}
+
+element normal active {
+    text-color: @blue;
+/* */ }
+
+element normal urgent {
+    text-color: @red;
+}
+
+element alternate normal {
+}
+
+element alternate active {
+    text-color: @blue;
+/* */ }
+
+element alternate urgent {
+    text-color: @red;
+}
+
+element selected active {
+    background-color: @blue;
+    text-color: @base;
+/* */ }
+
+element selected urgent {
+    background-color: @red;
+    text-color: @base;
+}
+
+error-message {
+    expand: true;
+    background-color: @maroon;
+/* */ border-color: @red;
+    border: 2px;
+    padding: 1em;
+}

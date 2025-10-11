@@ -1,6 +1,6 @@
 configuration {
-	modes: "window,drun,run,ssh";
-	font: "mono 12";
+	modes: "window,drun,run,ssh,filebrowser";
+	font: "Fira Code 14";
   location: 0;
 	show-icons: true;
 /*	preview-cmd: ;*/
@@ -35,7 +35,9 @@ configuration {
   filebrowser {
       directories-first: true;
       sorting-method:    "name";
+      show-hidden:       true;
+      directory:         "~/";
   }
 }
 
-@theme "sidebar.rasi"
+@theme "sidebarcatppuccin.rasi"
