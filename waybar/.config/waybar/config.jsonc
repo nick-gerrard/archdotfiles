@@ -74,7 +74,7 @@
     "battery": {
       "states": {
        "warning": 30,
-       "critical": 15
+       "critical": 5
         },
       "format": "{icon} {time}",
       "format-charging": "󰂄 {time}",
