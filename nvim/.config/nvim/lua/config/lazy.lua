@@ -50,4 +50,10 @@ require("lazy").setup({
       },
     },
   },
+  extras = {
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.svelte",
+    "lazyvim.plugins.extras.lang.lua",
+  },
 })
