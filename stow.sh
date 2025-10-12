@@ -8,7 +8,7 @@ set -e
 
 # --- CONFIGURATION ---
 # Your dotfiles directory.
-DOTFILES_DIR="$HOME/archdotfiles"
+DOTFILES_DIR="$HOME/dotfiles"
 # The target directory for the symlinks.
 STOW_TARGET_DIR="$HOME"
 # --- END CONFIGURATION ---
