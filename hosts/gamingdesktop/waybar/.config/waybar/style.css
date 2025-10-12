@@ -1,0 +1,72 @@
+/* --- Global Styles --- */
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: Fira Code, FontAwesome, sans-serif; /* Use the font you installed */
+    font-size: 16px;
+    min-height: 0;
+}
+
+/* --- The Bar Itself --- */
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.85); /* Dark background with some transparency */
+    color: #cdd6f4; /* Light text color */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- Module Styles --- */
+#workspaces,
+#clock,
+#tray,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#temperature,
+#network,
+#battery,
+#custom-bluetooth,
+#custom-lock {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+/* --- Style for the active workspace button --- */
+#workspaces button.active {
+    /* background-color: #b4befe;  */
+    color: #74c7ec; /* Dark text for the active workspace */
+}
+
+#workspaces button:hover {
+    background-color: #b4befe;
+    color: #1e1e2e;
+}
+
+#battery {
+    font-size: 16px; /* Increase font size from the default */
+    padding: 0 10px;
+    margin: 0 4px;
+    color: #a6e3a1; /* A nice green color for good status */
+}
+
+#battery.warning {
+    color: #f9e2af; /* Yellow for warning state (below 30%) */
+}
+
+#battery.critical {
+    color: #f38ba8; /* Red for critical state (below 15%) */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Blinking animation for critical state */
+@keyframes blink {
+    to {
+        background-color: #f38ba8;
+        color: #1e1e2e;
+    }
+}
