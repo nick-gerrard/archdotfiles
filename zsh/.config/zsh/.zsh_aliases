@@ -8,4 +8,6 @@ alias zsrc="source $HOME/.config/zsh/.zshrc"
 alias ls="eza -a --icons -T -L 1"
 alias cl="clear"
 
+# TMUX
+# alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 
