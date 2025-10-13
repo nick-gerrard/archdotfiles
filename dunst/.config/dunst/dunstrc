@@ -6,7 +6,7 @@
     geometry = "350x6-40+50"
 
     # Font settings
-    font = Fira Code 10
+    font = Fira Code 14
 
     # Format of the notification content
     # %a = app name, %s = summary, %b = body, %I = icon
@@ -15,7 +15,7 @@
     # Sorting and stacking options
     sort = yes
     indicate_hidden = yes
-    alignment = left
+    alignment = center 
     bounce_freq = 0
     
     # --- Appearance ---
