@@ -7,10 +7,13 @@ return {
       -- python
       "pyright",
       "ruff",
+      "guitui",
 
       -- web dev
       "typescript-language-server",
       "svelte-language-server",
+      "termux-language-server",
+      "tailwind-language-server",
 
       -- lua
       "lua-language-server",
