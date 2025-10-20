@@ -11,3 +11,6 @@ alias cl="clear"
 # TMUX
 # alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 
+# Raspberry Pi SSH
+alias rpi="ssh nickg@192.168.50.20"
+alias rpi2="ssh nickg@192.168.50.127"
