@@ -98,6 +98,25 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
+# Setting custom tmux functions
+# Attach to a tmux session
+ta() {
+  tmux attach-session -t "$(tmux list-sessions -F '#S' | fzf)"
+}
+
+# Switch to a tmux session
+ts() {
+  tmux switch-client -t "$(tmux list-sessions -F '#S' | fzf)"
+}
+
+# Your other aliases are fine, but for consistency you could make them functions too
+tn() {
+  tmux new -s "$1"
+}
+
+tl() {
+  tmux list-sessions
+}
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
