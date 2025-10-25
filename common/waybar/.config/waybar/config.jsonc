@@ -8,7 +8,7 @@
     // Define the order of modules for each section of the bar
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/bluetooth", "pulseaudio", "memory", "network", "battery", "tray", "custom/lock"],
+    "modules-right": ["custom/bluetooth", "pulseaudio", "memory", "cpu", "network", "battery", "tray", "custom/lock"],
 
     // --- Module Configurations ---
 
