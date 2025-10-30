@@ -9,7 +9,7 @@
 
 /* --- The Bar Itself --- */
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.85); /* Dark background with some transparency */
+    background-color: transparent;
     color: #cdd6f4; /* Light text color */
     transition-property: background-color;
     transition-duration: .5s;
@@ -30,6 +30,7 @@ window#waybar {
 #custom-lock {
     padding: 0 10px;
     margin: 0 4px;
+    background-color: rgba(30, 30, 46, 0.85);
 }
 
 /* --- Style for the active workspace button --- */
