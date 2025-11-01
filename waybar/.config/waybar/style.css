@@ -1,7 +1,6 @@
 /* --- Global Styles --- */
 * {
     border: none;
-    border-radius: 10px;
     font-family: Fira Code, FontAwesome, sans-serif; /* Use the font you installed */
     font-size: 16px;
     min-height: 0;
@@ -9,14 +8,36 @@
 
 /* --- The Bar Itself --- */
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.85); /* Dark background with some transparency */
+    background-color: transparent;
     color: #cdd6f4; /* Light text color */
     transition-property: background-color;
     transition-duration: .5s;
 }
 
-/* --- Module Styles --- */
+.modules-right {
+    padding: 0 10px;
+    border-radius: 10;
+    margin: 0 4px;
+    background-color: rgba(30, 30, 46, 0.85);
+}
+
+
+.modules-center {
+    padding: 0 10px;
+    border-radius: 10;
+    margin: 0 4px;
+    background-color: rgba(30, 30, 46, 0.85);
+}
+
+.modules-left {
+    padding: 0 10px;
+    border-radius: 10;
+    margin: 0 4px;
+    background-color: rgba(30, 30, 46, 0.85);
+}
+
 #workspaces,
+#window,
 #clock,
 #tray,
 #pulseaudio,
@@ -29,7 +50,9 @@ window#waybar {
 #custom-bluetooth,
 #custom-lock {
     padding: 0 10px;
+    /* border-radius: 10; */
     margin: 0 4px;
+    /* background-color: rgba(30, 30, 46, 0.85); */
 }
 
 /* --- Style for the active workspace button --- */

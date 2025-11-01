@@ -3,10 +3,10 @@
     "layer": "top",
     "position": "top", // top, bottom, left, right
     "height": 45,
-    "width": 1900,
+    // "width": 1900,
 
     // Define the order of modules for each section of the bar
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["custom/bluetooth", "pulseaudio", "memory", "cpu", "network", "battery", "tray", "custom/lock"],
 
@@ -23,6 +23,11 @@
             "default": "󰣇"
         }
     },
+
+    "hyprland/window": {
+    "format": "{}",
+    "icon": true
+  },
 
     "clock": {
         "format": "{:%a %d  --- %H:%M}",
