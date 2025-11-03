@@ -5,7 +5,7 @@
 #
 # Source .zshrc easily
 alias zsrc="source $HOME/.config/zsh/.zshrc"
-alias ls="eza -a --icons -T -L 1"
+alias ls="eza  --icons -T -L 1"
 alias cl="clear"
 
 # TMUX
