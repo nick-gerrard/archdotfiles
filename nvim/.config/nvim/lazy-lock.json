@@ -35,5 +35,6 @@
   "ts-comments.nvim": { "branch": "main", "commit": "123a9fb12e7229342f807ec9e6de478b1102b041" },
   "venv-selector.nvim": { "branch": "main", "commit": "1ef6564d0bd0d9c4194711cfb696357a6119abd7" },
   "vim-tmux-navigator": { "branch": "master", "commit": "c45243dc1f32ac6bcf6068e5300f3b2b237e576a" },
+  "vimtex": { "branch": "master", "commit": "95b93a24740f7b89dd8331326b41bdd1337d79f6" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
 }
