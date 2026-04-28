@@ -17,3 +17,6 @@ alias janus="cd ~/Code/janus/ && source ~/Code/janus/.venv/bin/activate && pytho
 # Raspberry Pi SSH
 alias rpi="ssh nickg@192.168.50.20"
 alias rpi2="ssh nickg@192.168.50.127"
+
+# Server SSH
+alias dev_server="ssh -i ~/.ssh/id_ed25519 nickg@pwhl.nickgerrard.dev"
