@@ -56,4 +56,7 @@ require("lazy").setup({
     "lazyvim.plugins.extras.lang.svelte",
     "lazyvim.plugins.extras.lang.lua",
   },
+  git = {
+    url_format = "https://github.com/%s.git",
+  },
 })
