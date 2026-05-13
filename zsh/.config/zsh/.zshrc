@@ -122,8 +122,8 @@ tl() {
 }
 
 # Sett SSH Agent:
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
+# eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/id_ed25519
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
