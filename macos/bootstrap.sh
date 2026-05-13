@@ -55,7 +55,7 @@ brew update
 # -----------------------------------------------------------------------------
 info "Installing packages from Brewfile..."
 
-brew bundle --no-lock --file=/dev/stdin <<'BREWFILE'
+brew bundle  --file=/dev/stdin <<'BREWFILE'
 
 # ── Taps ─────────────────────────────────────────────────────────────────────
 tap "nikitabobko/tap"          # Aerospace WM
