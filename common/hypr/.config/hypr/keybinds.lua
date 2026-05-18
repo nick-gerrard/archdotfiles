@@ -2,7 +2,7 @@
 --- KEYBINDINGS ---
 -------------------
 local mod = "SUPER"
-local terminal = "kitty"
+local terminal = "ghostty"
 local fileManager = "thunar"
 local menu = "rofi -show drun"
 local browser = "google-chrome-stable"
