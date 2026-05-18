@@ -50,6 +50,7 @@ return {
     ---@type table<string, vim.lsp.Config>
     local servers = {
       stylua = {},
+      ts_ls = {},
       pyright = {
         settings = {
           pyright = {
