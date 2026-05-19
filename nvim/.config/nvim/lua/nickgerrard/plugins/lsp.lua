@@ -51,6 +51,18 @@ return {
     local servers = {
       stylua = {},
       ts_ls = {},
+      svelte = {
+        on_attach = function(client, _)
+          -- Notify the svelte LSP when .ts/.js files change so it can
+          -- re-check types in .svelte files that import them.
+          vim.api.nvim_create_autocmd('BufWritePost', {
+            pattern = { '*.js', '*.ts' },
+            callback = function(ctx)
+              client.notify('$/onDidChangeTsOrJsFile', { uri = ctx.match })
+            end,
+          })
+        end,
+      },
       pyright = {
         settings = {
           pyright = {
